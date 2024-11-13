@@ -28,21 +28,21 @@ int main() {
     plates[1][0] -= 1; // Уменьшаем количество десертных тарелок у VIP-персоны
 
     
-    cout << "Столовые приборы:\n";
+    cout << "Cutlery:\n";
     for (int i = 0; i < 12; i++) {
-        cout << "Место " << i + 1 << ": Вилки: " << cutlery[0][i] 
-                  << ", Ложки: " << cutlery[1][i] << ", Ножи: " << cutlery[0][i] << "\n";
+        cout << "Place " << i + 1 << ": Forks: " << cutlery[0][i] 
+                  << ", Spoons: " << cutlery[1][i] << ", Knifes: " << cutlery[0][i] << "\n";
     }
 
-    cout << "\nТарелки:\n";
+    cout << "\nPlates:\n";
     for (int i = 0; i < 12; i++) {
-        cout << "Место " << i + 1 << ": Тарелки: " << plates[0][i] 
-                  << ", Десертные тарелки: " << plates[1][i] << "\n";
+        cout << "Place " << i + 1 << ": Plates: " << plates[0][i] 
+                  << ", Desert plates: " << plates[1][i] << "\n";
     }
 
-    cout << "\nСтулья:\n";
+    cout << "\nChairs:\n";
     for (int i = 0; i < 12; i++) {
-        cout << "Место " << i + 1 << ": Стульев: " << chairs[i] << "\n";
+        cout << "Place " << i + 1 << ": Chairs: " << chairs[i] << "\n";
     }
 
     return 0;
