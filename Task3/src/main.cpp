@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 int main(){
 
     int matrix1[4][4];
@@ -32,19 +31,15 @@ int main(){
         cout << "The two matrices are identical." << endl;
         int num = matrix1[0][0];
 
-    for(int i = 0; i < 4; i++){
-        for(int j = 0; j < 4; j++){
-            matrix1[i][j] = 0;
-            if(j == i){
-                matrix1[i][j] = num;
+        for(int i = 0; i < 4; i++){
+            for(int j = 0; j < 4; j++){
+                matrix1[i][j] = 0;
+                if(j == i){
+                    matrix1[i][j] = num;
+                }
+                cout << matrix1[i][j] << " ";
             }
-            cout << matrix1[i][j] << " ";
+            cout << endl;
         }
-        cout << endl;
     }
-
-    }
-
-    
-
 }
