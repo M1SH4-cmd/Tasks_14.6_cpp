@@ -25,7 +25,26 @@ int main(){
         }
     }
 
-    count == 16 ? cout << "The two matrices are identical." : cout << "The two matrices are not identical.";
+
+    if(count != 16){
+        cout << "The two matrices are not identical." << endl;
+    }else{
+        cout << "The two matrices are identical." << endl;
+        int num = matrix1[0][0];
+
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            matrix1[i][j] = 0;
+            if(j == i){
+                matrix1[i][j] = num;
+            }
+            cout << matrix1[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    }
+
     
 
 }
